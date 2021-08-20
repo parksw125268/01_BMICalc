@@ -9,41 +9,43 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="@string/height"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/custom_black"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/height"
+        android:textColor="@color/custom_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:layout_marginBottom="20dp"
+        android:id="@+id/heightEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"/>
+        android:layout_marginBottom="20dp"
+        android:inputType="numberDecimal" />
 
     <TextView
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/custom_black"
-        android:layout_marginBottom="10dp"
-        android:text="@string/weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"/>
-    <Button
-        android:text="@string/confirm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_marginBottom="10dp"
+        android:text="@string/weight"
+        android:textColor="@color/custom_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/resultButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm" />
 
 
 </LinearLayout>
