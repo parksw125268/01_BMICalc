@@ -3,4 +3,5 @@
     <string name="height">신장</string>
     <string name="weight">체중</string>
     <string name="confirm">확인하기</string>
+    <string name="back">돌아하기</string>
 </resources>

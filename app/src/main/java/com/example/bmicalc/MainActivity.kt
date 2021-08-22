@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -27,8 +28,12 @@ class MainActivity : AppCompatActivity() {
             val height = heightEditText.text.toString().toInt()
             val weight=  weightEditText.text.toString().toInt()
 
-            val intent = Intent(this, ResultActivity::class.java)
-            startActivity(intent)
+            val intent1 = Intent(this, ResultActivity::class.java)
+            intent1.putExtra("height",height)
+            intent1.putExtra("weight",weight)
+            heightEditText.text.clear()
+            weightEditText.text.clear()
+            startActivity(intent1)
 
 
         }
